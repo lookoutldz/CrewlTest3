@@ -13,8 +13,9 @@ public class ConManager {
     private String location;
     private int responseCode;
 
-    public void getPic(String urlstr){
+    public void getPic(int appid){
 
+        String urlstr = "http://store.steampowered.com/app/" + appid;
         try
         {
             String location = urlstr;
